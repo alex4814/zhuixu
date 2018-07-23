@@ -1,0 +1,42 @@
+\documentclass{book}
+
+\title{赘婿}
+\author{愤怒的香蕉}
+\date{}
+
+% 控制章节标题之排版
+\usepackage[small,sf]{titlesec}
+
+\usepackage{fontspec}
+
+\usepackage{xeCJK}
+\setCJKmainfont{Songti SC}
+
+% 中文自动换行
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+% 段落缩进
+\usepackage{indentfirst}
+
+\begin{document}
+
+% 标题
+\maketitle
+
+% 目录
+\tableofcontents
+\newpage
+
+% LaTeX 设计是以英文为对象, 内定之行距较小, 对中文并不适用。
+% 因此, 排版中文稿时, 我们须重新设定行距。
+\fontsize{12}{20pt}\selectfont
+
+\include{content/part01}
+\include{content/part02}
+\include{content/part03}
+\include{content/part04}
+
+\end{document}
+
+
